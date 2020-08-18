@@ -1,0 +1,66 @@
+
+
+SETUP / INSTALL INSTRUCTIONS:
+
+1) Download & Install Python 3 (3.8.3+ or greater required): https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe
+	- Check the box "Install launcher for all users (recommended)"
+	- Check the box "Add Python 3.8.3 to PATH
+	- Hit "Install Now"
+	- Near the end, hit "Disable path length limit" (on "Setup was successful" screen)
+
+	- Verify Python was installed correctly by opening a CMD prompt:
+		Type: "python --version"
+		- It should say "Python 3.8.3"
+	- Verify PIP was installed correctly by opening a CMD prompt:
+		Type: "pip --version"
+			* note: May need to be pip3 --version
+		- It should give you a version number like 20.x.x
+
+
+2) Launch a cmd prompt and type:
+	pip install -U pywinauto
+
+	- If you receive receive an error message, you may need to do pip3 install -U pywinauto
+
+	Other packages that maybe needed:
+		datetime
+		win32gui
+		win32com
+		time
+		os
+		argparse
+		configparser
+
+
+3) Download the file tiswapapp.py from: https://github.com/kylek29/ti-layout-swapper, place it somewhere on the system.
+
+4) Open Windows Task Scheduler with the logged on user.
+	
+	
+** TODO:
+Add a watchdog script to this?
+
+SCHTASKS /CREATE /SC WEEKLY /D MON,TUE,WED,THU,FRI /TN "TILayoutSwap\Premarket-Layout" /TR "python.exe" /ST 08:30
+SCHTASKS /CREATE /SC WEEKLY /D MON,TUE,WED,THU,FRI /TN "TILayoutSwap\Open-Layout" /TR "python.exe" /ST 09:30
+SCHTASKS /CREATE /SC WEEKLY /D MON,TUE,WED,THU,FRI /TN "TILayoutSwap\Lunch-Layout" /TR "python.exe" /ST 11:00
+SCHTASKS /CREATE /SC WEEKLY /D MON,TUE,WED,THU,FRI /TN "TILayoutSwap\Closing-Layout" /TR "python.exe" /ST 2:00
+
+
+
+C:\Users\kylek\anaconda3\envs\py38\python.exe "C:\Temp\tiswapapp.py -path 'C:\Temp\' -layout 'BBT_SCANNER_NUMBER2.LTI' --debug"
+C:\Users\kylek\anaconda3\envs\py38\python.exe "C:\Temp\tiswapapp.py -path 'C:\Temp\' -layout 'BBT_SCANNER_NUMBER2.LTI' --debug"
+
+/c "C:\Users\kylek\anaconda3\envs\py38\python.exe" "C:\Temp\tiswapapp.py" -path "C:\Temp\" -layout "BBT_SCANNER_NUMBER2k.LTI" --debug
+/c "C:\Users\kylek\anaconda3\envs\py38\python.exe" "C:\Temp\tiswapapp.py" -path "C:\Temp\" -layout "BBT_SCANNER_NUMBER2k.LTI" --debug
+
+
+*Setup a VM of Win10 with Python 3.8.3 and test these instructions.
+
+
+
+
+TEMP
+BebasNeue (header)
+Poppins (text)
+
+Red: 214,0,0

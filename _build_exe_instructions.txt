@@ -1,0 +1,18 @@
+To build an EXE you need to use PyInstaller. You may want to setup a separate vanilla virtual environment, if you use Anaconda 3 you can do this like:
+
+conda create --no-default-packages -n 'pybase38tiswap' python=3.8.3
+conda activate pybase38tiswap
+
+pip install -U pywinauto
+pip install pyinstaller
+pip install argparse
+pip install configparser
+
+Then run from the script directory:
+	
+	pyinstaller --onefile tilayoutswap.py --icon tilayoutswap.ico
+
+
+
+NOTE:
+- Building from a base Anaconda environment can include every module that is installed and the resulting .EXE maybe hundreds of megs big. Doing a bare environment allows you to significantly reduce the size (for me it was reduced from 300mb to 14mb).
