@@ -16,13 +16,13 @@ Use Windows Task Scheduler for scheduling the layout shifts at specified time
 * For the EXE version you can use the same arguments, just call 'tilayoutswap.exe' instead of 'python.exe tilayoutswap.py'
       
 # Config
-* Upon first run of the .exe, a default config.ini file will be created in the .exe's directory, options are:
-* * [user] layout_directory :: This is the default directory we should look into for layout files. Defaults to C:\Temp
-* * [user] debug_mode :: Turns the extended debug logging on or off. Defaults to False (other option is True)
-* * [tradeideas] ti_path :: The location for the TradeIdeas EXE. Default is "C:\Program Files\Trade-Ideas\Trade-Ideas Pro AI\"
-* * [tradeideas] ti_exe :: The name for the Trade Ideas EXE. Default is "TIPro.exe" -- Change this if you have a different version.
-* * [tradeideas] ti_default_user_directory :: The location of where TradeIdeas saves layouts by default. Defaults to: "C:\Users\{user}\Documents\TradeIdeasPro"
-* * [tradeideas] ti_shellpath :: Parameters for calling TI from the cmd line (shell), you likely don't need to change this. Uses ti_path and ti_exe from above.
+- Upon first run of the .exe, a default config.ini file will be created in the .exe's directory, options are:
+    - [user] layout_directory :: This is the default directory we should look into for layout files. Defaults to C:\Temp
+    - [user] debug_mode :: Turns the extended debug logging on or off. Defaults to False (other option is True)
+    - [tradeideas] ti_path :: The location for the TradeIdeas EXE. Default is "C:\Program Files\Trade-Ideas\Trade-Ideas Pro AI\"
+    - [tradeideas] ti_exe :: The name for the Trade Ideas EXE. Default is "TIPro.exe" -- Change this if you have a different version.
+    - [tradeideas] ti_default_user_directory :: The location of where TradeIdeas saves layouts by default. Defaults to: "C:\Users\{user}\Documents\TradeIdeasPro"
+    - [tradeideas] ti_shellpath :: Parameters for calling TI from the cmd line (shell), you likely don't need to change this. Uses ti_path and ti_exe from above.
 
       
 # Requirements
