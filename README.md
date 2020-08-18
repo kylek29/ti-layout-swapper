@@ -40,4 +40,4 @@ Then run the script from the tilayoutswap.py scripts directory with:
 * pyinstaller --onefile tilayoutswap.py --icon tilayoutswap.ico
 
 NOTE:
-- Building from a base Anaconda environment can include every module that is installed and the resulting .EXE maybe hundreds of megs big. Doing a bare environment allows you to significantly reduce the size (for me it was reduced from 300mb to 14mb).
+- The above is the recommended method as building directly from a base Anaconda environment can include every module that is installed and the resulting .EXE maybe hundreds of megs big. Doing a bare environment allows you to significantly reduce the size (for me it was reduced from 300mb to 14mb).
