@@ -34,6 +34,11 @@ Use Windows Task Scheduler for scheduling the layout shifts at specified time
         - "Run only when user is logged on" if you don't mind seeing the cmd window briefly, otherwise choose "run whether user is logged on or not" and do the additional password items requested.
     - Triggers Tab:
         - New... → Begin the Task "On a schedule" → Weekly, Recur every 1 week → Monday, Tuesday, Wednesday, Thursday, Friday, Start: current-date, 6:30:00 AM, "enabled" checked, hit OK
+        - New... → Begin the Task "On a schedule" → 
+            Start: current-date, 6:30:00 AM {whatever time you want}
+            Weekly → Recur every 1 week → Monday, Tuesday, Wednesday, Thursday, Friday
+            Enabled → checked
+            Hit OK
     - Actions Tab:
         - New... → Action "Start a program" → Program/Script: *browser to tilayoutswap.exe locaton and selection .exe* → Add arguments: -layout 'MY_LAYOUT_FILE.LTI' → Start in: Populate the folder that the exe is located in. Hit OK.
     - Remaining tabs → Configure as you see fit.       
